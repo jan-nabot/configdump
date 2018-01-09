@@ -1,0 +1,24 @@
+<!-- APPEND BELOW TO openbox rc.xml file -->
+<keybind key="C-A-slash"> <action name="ToggleMaximizeFull"></action> </keybind>
+<keybind key="C-A-comma"> <action name="MoveResizeTo"><monitor>next</monitor></action></keybind>
+<keybind key="C-A-period"> <action name="MoveResizeTo"><monitor>prev</monitor></action></keybind>
+
+    <keybind key="W-e">
+      <action name="Execute">
+        <startupnotify>
+          <enabled>true</enabled>
+          <name>Terminal</name>
+        </startupnotify>
+        <command>xterm -fullscreen -e 'tmux new-session -A -s 0'</command> <!-- each switch should be placed in config file of corresponding program -->
+      </action>
+    </keybind>
+
+    <keybind key="W-b">
+      <action name="Execute">
+        <startupnotify>
+          <enabled>true</enabled>
+          <name>Browser</name>
+        </startupnotify>
+        <command>chromium</command>
+      </action>
+    </keybind>
