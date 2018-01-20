@@ -12,7 +12,7 @@ set showmode
 
 set bs=2 " backspace over EOL and autoindent, there is also start option
 set scrolljump=5
-set scrolloff=8
+set scrolloff=1
 
 set ignorecase " search case insensitive by default
 set noerrorbells " quiet
